@@ -1,69 +1,49 @@
+<!-- THIS IS THE MAIN INDEX.HTML FILE. EVERYTHING BRANCHES OFF FROM HERE -->
 <!doctype html>
 <html class="no-js" lang="">
 
 <!-- THIS IS THE MAIN INDEX.HTML FILE. EVERYTHING BRANCHES OFF FROM HERE -->
 
+<!-- HEAD -->
 <head>
-  <!-- Random Auto-Generated Info. Contains CSS file location.
-  U can Just ignore the rest and move down to <body> -->
-  <meta charset="utf-8">
-  <title>WeatherVault</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Random Auto-Generated Info. Contains CSS file location.
+    U can Just ignore the rest and move down to <body> -->
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Make sure favicon.ico is in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-
-  icon" href="icon.png">
-  <!-- Make sure favicon.ico is in the root directory -->
+    <!-- this is where our css stylesheets are -->
+    <link rel="stylesheet" href="css/index_buttons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/sign.css">
 
-  <!-- this is where our css stylesheets are -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- more auto-generate info u can ignore -->
-  <meta name="theme-color" content="#fafafa">
+    <!-- more auto-generate info u can ignore -->
+    <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-    <!-- Page Heading (<h1>) -->
-    <h1 class="header"> Weather Vault </h1>
+<!-- BODY -->
+<body style="font-family:aria,sans-serif">
+<!-- Page Heading (<h1>) -->
+<h1 class="header"> Weather Vault </h1>
+<h2 class="sub-header">choose your desired climate</h2>
 
-    <div class="text">
-      <div class="cursor">
-        <input style="border: none"
-               type="text"
-               class="input1"
-               placeholder="enter you desired climate">
-      </div>
-    <br>
-        <div>
-          are you a certified weather vault guide? <input type="radio"></input>
-        </div>
-      <br>
-        <div>
-          <!-- <button>login</button>-->
-          <a href="Sign_In.html"><button>login </button>
-          <a href="Sign_Up.html"><button>sign up </button>
-        </div>
-    </div>
-
-<!--    <div class="div1">-->
-<!--      <p id="descriptions">-->
-<!--        <script src="js/main.js"></script>-->
-<!--      </p>-->
-
-
-  <!-- Google Analytics: we'll replace UA-XXXXX-Y with our site's ID -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<div class="main_image_container">
+    <img src="./images/4diffclimates.png" alt="climates" class="main_image">
+    <div class="bottom-left">Bottom Left</div>
+    <div class="top-left">Top Left</div>
+    <div class="top-right">Top Right</div>
+    <div class="bottom-right">Bottom Right</div>
+    <div class="centered">Centered</div>
+</div>
+<br>
+<div class="weather_guide">
+    are you a certified weather vault guide? <input type="radio"> </input>
+</div>
+<br>
+<div>
+    <!-- <button>login</button>-->
+    <a href="Sign_In.html"><button>login </button> </a>
+    <a href="Sign_Up.html"><button>sign up </button> </a>
+</div>
 </body>
-
-</html>
