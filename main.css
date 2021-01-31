@@ -1,0 +1,26 @@
+/* ==========================================================================
+   index.html styles
+   ========================================================================== */
+
+
+h1.header {
+  color: powderblue;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+}
+/* code to make blinking cursor */
+
+.input1 {
+  width: 300px;
+  text-align: center;
+}
+
+
+/* this line removes the blue outline that
+ you get when you select an element*/
+*:focus {outline:none}
+
+
